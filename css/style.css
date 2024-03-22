@@ -84,6 +84,9 @@ img {
     h1{
         font-size: 1rem;
     }
+    h1{
+        -webkit-text-stroke: 0.5px #0075BE;
+    }
 }
 
 #pagination {
