@@ -1,0 +1,215 @@
+@import url("reset.css");
+@font-face {
+    font-family: Pokemon;
+    src: url(PokemonSolid.ttf);
+    }
+h1{
+    font-family: Pokemon, sans-serif;
+    letter-spacing: .3rem;
+    color: #FFCC00;
+    -webkit-text-stroke: 2px #0075BE;
+    text-transform: capitalize;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background-color: #FFCC00; 
+    color: #333; 
+}
+tr:nth-child(even) {
+    background-color: #fcefba;
+}
+tr:hover {
+    background-color: #b0e1ff;
+}
+img {
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+.montable{
+    overflow-x:auto;
+}
+@media screen and (max-width: 768px) {
+    table {
+        font-size: .7rem;
+    }
+    th{
+        font-size: .8rem;
+    }
+    th,td{
+        padding: .5rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    table,th {
+        font-size: .5rem;
+    }
+    img{
+        display: none;
+    }
+    tbody  td:nth-child(8), thead  th:nth-child(8){
+        display: none;
+    }
+    h1{
+        font-size: 1rem;
+    }
+}
+
+#pagination {
+    margin-top: 3%;
+    margin-bottom: 2%;
+    text-align: center;
+    
+}
+
+#pagination button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: 1px solid #0075BE;
+    background-color: #FFCC00;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#pagination button:hover {
+    background-color: #b0e1ff;
+}
+
+#pokemonDetails {
+    display: none;
+    position: fixed; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: #ffffff;
+    border: 1px solid #0075BE;
+    padding: 30px;
+    z-index: 1000; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    max-width: 500px; 
+    margin: 0 auto; 
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* .pokemon-details{
+    height: 60%;
+    overflow: scroll;
+} */
+.pokemon-details h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0075BE;
+    margin-bottom: 10px;
+}
+#detailsContent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#detailsContent p{
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .pokemon-details h2{
+        font-size: 1.3rem;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .pokemon-details h2{
+        font-size: 1rem;
+    }
+    #detailsContent p{
+        line-height: 1.2rem;
+    }
+    #pokemonDetails{
+        top: 40%; 
+        max-width: 60%; 
+        font-size: 0.8rem;
+        padding: 15px;
+    }
+    
+}
+.test{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.test ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#arguments{
+    margin-top: 2%;
+    display: flex;
+    gap: 20px;
+    align-items: end;
+}
+#arguments label{
+    font-size: 1.5rem;
+}
+#arguments input{
+    height: 30px;
+    padding: 10px;
+}
+.att{
+    color: #FFCC00;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 9999;
+}
+
+.popup-image {
+    max-width: 300px; 
+    max-height: 300px; 
+    display: block;
+    margin: 0 auto;
+}

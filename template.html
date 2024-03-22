@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Page</title>
+    <style>
+        @font-face {
+            font-family: Pokemon;
+            src: url(/html/css/PokemonSolid.ttf);
+            }
+        h1{
+            font-family: Pokemon, sans-serif;
+            letter-spacing: .3rem;
+            color: #FFCC00;
+            -webkit-text-stroke: 2px #0075BE;
+            text-transform: capitalize;
+        }
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #FFCC00; 
+            color: #333; 
+        }
+        tr:nth-child(even) {
+            background-color: #fcefba;
+        }
+        tr:hover {
+            background-color: #b0e1ff;
+        }
+        img {
+            max-height: 50px;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+            table {
+                font-size: 12px;
+            }
+            th{
+                font-size: 12px;
+            }
+            th,td{
+                padding: 5px;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            table,th {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Informations sur un pokémon</h1>
+        <div style="overflow-x:auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom</th>
+                        <th>Génération</th>
+                        <th>Types</th>
+                        <th>Endurance</th>
+                        <th>Attaque</th>
+                        <th>Défense</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Bulbasaur</td>
+                        <td>1</td>
+                        <td>Grass, Poison</td>
+                        <td>128</td>
+                        <td>118</td>
+                        <td>111</td>
+                        <td><img src="/webp/thumbnails/001.webp" alt="Bulbasaur"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

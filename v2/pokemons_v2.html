@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Pokémons</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Liste des Pokémons</h1>
+        <div class="montable">
+            <table id="pokemonTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom</th>
+                        <th>Génération</th>
+                        <th>Types</th>
+                        <th>Endurance</th>
+                        <th>Attaque</th>
+                        <th>Défense</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody id="pokemonTableBody">
+                    
+                </tbody>
+            </table>
+        </div>
+        <div id="pagination">
+            <button id="prevButton">PRÉC</button>
+            <span id="pageInfo">Page <span id="currentPage">1</span> sur <span id="totalPages">1</span></span>
+            <button id="nextButton">SUIV</button>
+        </div>
+    </div>
+
+    <script src="../data/charged_moves.js"></script>
+    <script src="../data/cp_multiplier.js"></script>
+    <script src="../data/fast_moves.js"></script>
+    <script src="../data/generation.js"></script>
+    <script src="../data/pokemon.js"></script>
+    <script src="../data/pokemon_moves.js"></script>
+    <script src="../data/pokemon_type.js"></script>
+    <script src="../data/type_effectiveness.js"></script>
+    <script src="../data/class_attack.js"></script>
+    <script src="../data/class_type.js"></script>
+    <script src="../data/class_pokemon.js"></script>
+    <script src="script_v2.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/css/style.css">
+                
+</head>
+<body class="test">
+    <h1 style="margin-top: 5%;">Tests Pokémon</h1>
+    <ul>
+        <li><a href="#" onclick="testQ1()"><span style="color: #0075BE;">Test Q1:</span>Liste des Pokémons par type</a></li>
+        <li><a href="#" onclick="testQ2()"><span style="color: #0075BE;">Test Q2:</span> Liste des Pokémons par attaque</a></li>
+        <li><a href="#" onclick="testQ3()"><span style="color: #0075BE;">Test Q3:</span> Liste des attaques par type</a></li>
+        <li><a href="#" onclick="testQ4()">Test Q4: Liste des Pokémons triés par nom</a></li>
+        <li><a href="#" onclick="testQ5()">Test Q5: Liste des Pokémons triés par endurance</a></li>
+        <li><a href="#" onclick="testQ6()"><span style="color: #0075BE;">Test Q6:</span> Liste des Pokémons sur lesquels une attaque est la plus efficace</a></li>
+        <li><a href="#" onclick="testQ7()"><span style="color: #0075BE;">Test Q7:</span> Liste des types d’attaque les plus efficaces contre un Pokémon donné</a></li>
+    </ul>
+
+    <div id="arguments"> //Champ commun à tous les tests, permettant la saisie de l’argument
+        <label for="argument" style="color: #0075BE;">Argument:</label>
+        <input type="text" id="argument" name="argument">
+    </div>
+
+</body>
+<script src="../data/charged_moves.js"></script>
+<script src="../data/cp_multiplier.js"></script>
+<script src="../data/fast_moves.js"></script>
+<script src="../data/generation.js"></script>
+<script src="../data/pokemon.js"></script>
+<script src="../data/pokemon_moves.js"></script>
+<script src="../data/pokemon_type.js"></script>
+<script src="../data/type_effectiveness.js"></script>
+<script src="../data/class_attack.js"></script>
+<script src="../data/class_type.js"></script>
+<script src="../data/class_pokemon.js"></script>
+<script src="/test/test.js"></script>
+</html>
