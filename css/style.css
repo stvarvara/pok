@@ -131,10 +131,10 @@ img {
     cursor: pointer;
 }
 
-/* .pokemon-details{
-    height: 60%;
+ .pokemon-details{
+    max-height: 90%;
     overflow: scroll;
-} */
+} 
 .pokemon-details h2{
     font-size: 1.5rem;
     font-weight: bold;
